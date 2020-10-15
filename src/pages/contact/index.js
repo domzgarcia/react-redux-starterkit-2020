@@ -6,7 +6,7 @@ class Contact extends Component {
     }
     render(){
         return (
-            <h1>Contact</h1>
+            <h3><a href="https://github.com/domzgarcia" target="_blank">@domzg</a></h3>
         )
     }
 }

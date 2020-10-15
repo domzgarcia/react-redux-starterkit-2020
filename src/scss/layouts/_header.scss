@@ -7,3 +7,20 @@
         }
     }
 }
+
+.redux-counter {
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+    margin-left: 10px;
+
+    &::before {
+        content: 'redux couter';
+        font-size: 14px;
+        font-weight: normal;
+        position: absolute;
+        left: 5px;
+        width:100px;
+        top: -15px;
+    }
+}

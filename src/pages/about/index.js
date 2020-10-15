@@ -13,7 +13,7 @@ class About extends Component {
                 <h1>About</h1>
                 <button
                 onClick={this.props.commonHandleAddCounter}
-                >do something</button>
+                >Redux: Add Counter</button>
             </>
         )
     }

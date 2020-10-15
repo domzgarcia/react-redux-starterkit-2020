@@ -6,7 +6,7 @@ class Home extends Component {
     }
     render(){
         return (
-            <h1>Domz Garcia</h1>
+            <h1>Yet another React+Redux Boilerplate</h1>
         )
     }
 }

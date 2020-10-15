@@ -9,3 +9,8 @@
 
 ### Todos
 -[ ] Unit tests
+
+---
+
+### Support
+Support me by smashing the ⭐! 

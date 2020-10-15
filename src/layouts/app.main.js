@@ -4,7 +4,7 @@ import asyncRoute from '../utilities/asyncRoute';
 
 const HeaderComponent = asyncRoute(() => import('Layouts/header.component'));
 const FooterComponent = asyncRoute(() => import('Layouts/footer.component'));
-const HomeComponent   = asyncRoute(() => import('Pages/home'));
+const Home   = asyncRoute(() => import('Pages/home'));
 const About   = asyncRoute(() => import('Pages/about'));
 const Contact   = asyncRoute(() => import('Pages/contact'));
 
@@ -23,7 +23,7 @@ class App extends Component {
             <div className={`App-${this.randomizer()}`}>
                 <HeaderComponent />
                 <Switch>
-                    <Route exact path='/' component={HomeComponent}/>
+                    <Route exact path='/' component={Home}/>
                     <Route exact path='/about' component={About}/>
                     <Route exact path='/contact-us' component={Contact}/>
                 </Switch>

@@ -1,0 +1,1 @@
+export const COMMON_ADD_COUNTER = "common:add.counter";

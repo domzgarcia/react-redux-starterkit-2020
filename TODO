@@ -1,0 +1,17 @@
+Developers Note:
+
+This repository is using old version of the FF:
+Changing the certain versions may cause dependency errors.
+
+"react": "^16.14.0",
+"react-dev-utils": "^10.2.1",
+"react-dom": "^16.4.2",
+"react-redux": "^5.0.7",
+"react-router-dom": "^4.3.1",
+"react-router-redux": "^5.0.0-alpha.9",
+"react-scripts": "3.4.3",
+"redux": "^4.0.0",
+"redux-thunk": "^2.3.0"
+
+Todo:
+* Create an updated react-redux with react-router-redux support.

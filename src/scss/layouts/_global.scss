@@ -1,0 +1,17 @@
+// Variables
+$grayshade: #f1f3f5; 
+$fontColorShade1: #345;
+$ricostacruzSiteFont: -apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;
+
+html, body {
+    background: $grayshade;
+    font-family: $ricostacruzSiteFont;
+    font-size: 14px;
+    line-height: 1.6;
+    color: $fontColorShade1;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-weight: 200;
+}

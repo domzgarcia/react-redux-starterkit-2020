@@ -6,14 +6,26 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "lodash": "^4.17.10",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.6.2",
     "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-scripts": "3.4.3"
+    "react-app-rewired": "^2.1.6",
+    "react-dev-utils": "^10.2.1",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "react-scripts": "3.4.3",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "rxjs": "5.4.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

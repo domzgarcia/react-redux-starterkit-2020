@@ -84,7 +84,9 @@ body {
             // border: 1px solid #0c0c0c;
             font-style: italic;
         }
-
+        .highlight {
+            color: $violetshadeDark;
+        }
         .steps {
             margin-bottom: 20px;
             padding-left: 40px;

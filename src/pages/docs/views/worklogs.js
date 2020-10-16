@@ -52,16 +52,17 @@ class Worklogs extends Component {
 
                             <strong># Code Reference</strong>
                             <p>You may find the code in this directory <em>app/modules/worklogs</em>. 
-                            Worklogs version 1 doesn't have a task overlaps checker that's why I created a validator called <em>LogChecker.js</em>,
-                            &nbsp;what it does is it avoids tasks overlaps within an hour and before or after hour respectedly.</p>
+                            Worklogs version 1 doesn't have a task overlaps checker that's why I created a validator called <em className="highlight">LogChecker.js</em>,
+                            &nbsp;what it does is it avoids tasks overlap within an hour and before or after an hour respectively.</p>
 
                             <strong># Steps / How it works</strong>
                             <ul className="steps">
                                 <li>Click dashboard calendar, a popup will appear and then click <em>ADD/EDIT WORKLOG</em>.</li>
-                                <li>User may select project or directly click one of the time slot divided by hours.</li>
+                                <li>User may select project or directly click one of the time slot shown by hours.</li>
                                 <li>A small popup will appears, user may set <em>FROM and TO</em>.</li>
                                 <li>User may select certain Project and Tasks.</li>
-                                <li>The app have drag and drop functionality, upon setting time the app is smart enought to avoid overlapping of tasks like the description said above.</li>
+                                <li>The app has a drag and drop functionality, upon setting the time, it is smart enough to 
+                                detect the overlap tasks and inform the user using right away.</li>
                             </ul>
 
                             <strong># Database Dependencies</strong>

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import DocsNav from './common-header';
 
 class Dashboard extends Component {
@@ -8,10 +8,14 @@ class Dashboard extends Component {
 
     render(){
         return(
-            <div>
+            <Fragment>
+                <div className="dg-side-nav">
                 <DocsNav />
-                <h1>Dashboard</h1>
-            </div>
+                </div>
+                <div className="dg-content">
+                    <h1>Dashboard</h1>
+                </div>
+            </Fragment>
         )
     }
 }

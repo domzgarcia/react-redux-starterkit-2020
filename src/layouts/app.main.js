@@ -1,12 +1,13 @@
 import React, {Component, Fragment} from 'react';
 import {Route, Switch} from 'react-router-dom';
-import asyncRoute from '../utilities/asyncRoute';
+import asyncRoute from 'Utilities/asyncRoute';
 
 const HeaderComponent = asyncRoute(() => import('Layouts/header.component'));
 const FooterComponent = asyncRoute(() => import('Layouts/footer.component'));
-const Home   = asyncRoute(() => import('Pages/home'));
+const Home    = asyncRoute(() => import('Pages/home'));
 const About   = asyncRoute(() => import('Pages/about'));
-const Contact   = asyncRoute(() => import('Pages/contact'));
+const Contact = asyncRoute(() => import('Pages/contact'));
+const DocsRoute    = asyncRoute(() => import('Pages/docs'));
 
 class App extends Component {
     constructor(props){
@@ -26,6 +27,9 @@ class App extends Component {
                     <Route exact path='/' component={Home}/>
                     <Route exact path='/about' component={About}/>
                     <Route exact path='/contact-us' component={Contact}/>
+                    
+                    {/* Nested */}
+                    <Route path='/docs' component={DocsRoute}/>
                 </Switch>
                 <FooterComponent />
             </div>

@@ -14,6 +14,8 @@ class Header extends Component {
                     <li><Link to="/" >Home</Link></li>
                     <li><Link to="/about" >About</Link></li>
                     <li><Link to="/contact-us" >Contac Us</Link></li>
+                    
+                    <li><Link to="/docs" >Docs</Link></li>
                 </ul>
                 <h1>Header</h1>
                 <span className="redux-counter">{this.props.counter}</span>

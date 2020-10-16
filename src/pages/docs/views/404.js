@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import DocsNav from './common-header';
 
-class Dashboard extends Component {
+class AWOLReport extends Component {
     constructor(props){
         super(props);
     }
@@ -14,10 +14,10 @@ class Dashboard extends Component {
                 </div>
                 <div className="dg-dynamic">
                     <div className="dg-header">
-                        <h1>Welcome</h1><span className="sub-headline"></span>
+                        <h1>404<span className="sub-headline">Page not found.</span></h1>
                     </div>
                     <div className="dg-content">
-                        content
+                        You found a glitch!
                     </div>
                 </div>
             </Fragment>
@@ -25,4 +25,4 @@ class Dashboard extends Component {
     }
 }
 
-export default Dashboard;
+export default AWOLReport;

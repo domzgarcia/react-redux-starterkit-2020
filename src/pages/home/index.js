@@ -6,7 +6,9 @@ class Home extends Component {
     }
     render(){
         return (
-            <h1>Yet another React+Redux Boilerplate</h1>
+            <div style={{height:'2000px'}}>
+                <h1>Yet another React+Redux Boilerplate</h1>
+            </div>
         )
     }
 }

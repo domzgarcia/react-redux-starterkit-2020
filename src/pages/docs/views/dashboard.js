@@ -12,8 +12,13 @@ class Dashboard extends Component {
                 <div className="dg-side-nav">
                 <DocsNav />
                 </div>
-                <div className="dg-content">
-                    <h1>Dashboard</h1>
+                <div className="dg-dynamic">
+                    <div className="dg-header">
+                        <h1>Welcome!</h1>
+                    </div>
+                    <div className="dg-content">
+                        content
+                    </div>
                 </div>
             </Fragment>
         )

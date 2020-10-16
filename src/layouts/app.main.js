@@ -27,8 +27,7 @@ class App extends Component {
                     <Route exact path='/' component={Home}/>
                     <Route exact path='/about' component={About}/>
                     <Route exact path='/contact-us' component={Contact}/>
-                    
-                    {/* Nested */}
+                    {/* docs:nested */}
                     <Route path='/docs' component={DocsRoute}/>
                 </Switch>
                 <FooterComponent />

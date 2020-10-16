@@ -1,9 +1,60 @@
+.signature {
+    height: 55px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+
+    .rocket-emoji {
+        margin-right: 10px;
+        font-size: 30px;
+        line-height: 35px;
+        vertical-align: middle;
+    }
+}
+.main-header {
+    background: linear-gradient(5deg,#745fb5,#9066b8);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+
+    &.sticky {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+    }
+}
 .app-header {
+    display: inline-block;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+
+    a {
+        font-size: 16px;
+        line-height: 1.4;
+        font-weight: 400;
+        color: white;
+        font-family: -apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;
+        text-shadow: 0 1px 1px rgba(0,0,0,.2);
+        text-decoration: none;
+        padding: 15px 21px;
+        display: inline-block;
+
+        &:hover {
+            background-color: rgba(0,0,0,0.15);
+            border-radius: 5px;
+        }
+    }
+
     ul {
         list-style: none; 
         li { 
             display: inline-block;
-            margin: 0 15px;
         }
     }
 }

@@ -9,17 +9,25 @@ class Header extends Component {
 
     render(){
         return(
-            <div className="app-header">
-                <ul>
-                    <li><Link to="/" >Home</Link></li>
-                    <li><Link to="/about" >About</Link></li>
-                    <li><Link to="/contact-us" >Contac Us</Link></li>
+            <>
+                <div className="signature">
+                    <div className="-app-width">
+                        <span className="rocket-emoji">📚</span>
+                        <strong>@DOMSGARCIA</strong>
+                    </div>
                     
-                    <li><Link to="/docs" >Docs</Link></li>
-                </ul>
-                <h1>Header</h1>
-                <span className="redux-counter">{this.props.counter}</span>
-            </div>
+                </div>
+                <header className="main-header sticky">
+                    <div className="app-header -app-width">
+                        <ul>
+                            <li><Link to="/" >Home</Link></li>
+                            <li><Link to="/docs" >Documentation</Link></li>
+                            {/* <li><Link to="/about" >About</Link></li> */}
+                            {/* <li><Link to="/contact-us" >Contac Us</Link></li> */}
+                        </ul>
+                    </div>
+                </header>
+            </>
         )
     }
 }

@@ -20,11 +20,9 @@ class Worklogs extends Component {
                         </div>
                         <div className="dg-content">
                             <strong># Short description</strong>
-                            <p>This module records the rendered hours per project/tasks an employee did within 
-                            the day. An employee may logs multiple tasks within 1 hour but shouldn't be overlapping
-                            each other tasks.</p>
+                            <p>This module records the rendered hours per project/task an employee did within the day. An employee may log multiple tasks within an hour but shouldn't be overlapping each other tasks</p>
 
-                            <strong># Illustrations</strong>
+                            <strong># Screenshots</strong>
 
                             <div className="screenshot-wrapper">
                                 <div className="thumbnail-placeholder">
@@ -45,6 +43,20 @@ class Worklogs extends Component {
                                     <div className="outer-light">
                                         <div className="inner-dark">
                                             <span>Thumb3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="thumbnail-placeholder">
+                                    <div className="outer-light">
+                                        <div className="inner-dark">
+                                            <span>Thumb4</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="thumbnail-placeholder">
+                                    <div className="outer-light">
+                                        <div className="inner-dark">
+                                            <span>Thumb5</span>
                                         </div>
                                     </div>
                                 </div>
@@ -71,12 +83,17 @@ class Worklogs extends Component {
                     </div>
 
                     <div className="dg-content">
-                        <strong># Key takeaways</strong>
-
-                        <p>Lorem ipsum dolor amet</p>
+                        <strong># Technologies</strong>
+                        <ul className="steps">
+                            <li>Javascript</li>
+                        </ul>
                     </div>
 
-
+                    <div className="dg-content">
+                        <strong># Key takeaways</strong>
+                        <p>Sharing is caring, find time to teach junior developers whenever they needed, 
+                            at the end of the day it's not just your colleague but a friend.</p>
+                    </div>
                 </div>
             </Fragment>
         )

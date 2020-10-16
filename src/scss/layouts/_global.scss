@@ -69,7 +69,7 @@ body {
             font-weight: 600;
             color: $violetshade;
             display: inline-block;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         p {
             margin-bottom: 20px;
@@ -168,23 +168,24 @@ body {
 
 .screenshot-wrapper {
     display: flex;
+    margin-bottom: 20px;
 }
 .thumbnail-placeholder {
     cursor: pointer;
     .outer-light {
         background-color: $violetshadeLight;
-        height: 100px;
-        width: 100px;
-        border-radius: 10px;
-        margin: 0 10px 20px;
+        height: 75px;
+        width: 75px;
+        border-radius: 8px;
+        margin: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
         .inner-dark {
             background-color: $violetshadeDark;
-            height: 75px;
-            width: 75px;
-            border-radius: 10px;
+            height: 50px;
+            width: 50px;
+            border-radius: 8px;
             display: flex;
             justify-content: center;
             align-items: center;

@@ -5,6 +5,8 @@ import {ConnectedRouter} from 'react-router-redux';
 import store, {history} from './store';
 import App from 'Layouts/app.main';
 import './scss/index.scss';
+// import 'Vendors/prismjs/prism-coy.css';
+// import 'Vendors/prismjs/prism-coy.js';
 
 const Boot = () => {
   return(

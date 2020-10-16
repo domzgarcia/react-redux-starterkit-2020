@@ -5,6 +5,7 @@ module.exports = function override(config, env) {
     config.resolve.alias['Pages'] = path.join(__dirname, 'src', 'pages');
     config.resolve.alias['Reducers'] = path.join(__dirname, 'src', 'reducers');
     config.resolve.alias['Utilities'] = path.join(__dirname, 'src', 'utilities');
+    config.resolve.alias['Vendors'] = path.join(__dirname, 'src', 'vendors');
     
     // config.resolve.alias['pages'] = path.join(__dirname, 'pages');
     // config.resolve.alias['services'] = path.join(__dirname, 'services');

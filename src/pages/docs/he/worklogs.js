@@ -2,14 +2,28 @@ import React, {Component, Fragment} from 'react';
 import DocsNav from '../common-sidenav';
 import CodeViewer from 'Common/codeviewer';
 import DocHeadline from 'Common/components/documentation.headline';
+import {connect} from 'react-redux';
+import {handleOpenModalAsScreenhot} from 'Common/actions/modals/modals.actions';
 
-const codeBlock = require('./codeblock/worklogs.codeblock');
+const codeBlock = require('../codeblock/worklogs.codeblock');
 
 class Worklogs extends Component {
     constructor(props){
         super(props);
+
+        this.state = {
+            screenshots: [
+                'he.worklogs.ss01',
+            ]
+        }
+        this.handleOpenScreenshot.bind(this);
     }
 
+    handleOpenScreenshot(url){
+        const imgSource = `public/images/documentation/he/${url}.png`;
+        this.props.handleOpenModalAsScreenhot(imgSource);
+    }
+    
     render(){
         return(
             <Fragment>
@@ -29,41 +43,17 @@ class Worklogs extends Component {
                             <strong># Screenshots</strong>
 
                             <div className="screenshot-wrapper">
-                                <div className="thumbnail-placeholder">
-                                    <div className="outer-light">
-                                        <div className="inner-dark">
-                                            <span>Thumb1</span>
+                                {this.state.screenshots.map((ssname, idx) => (
+                                    <div key={idx} className="thumbnail-placeholder"
+                                        onClick={this.handleOpenScreenshot(ssname)}
+                                    >
+                                        <div className="outer-light">
+                                            <div className="inner-dark">
+                                                <span className="sname">{ssname}</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="thumbnail-placeholder">
-                                    <div className="outer-light">
-                                        <div className="inner-dark">
-                                            <span>Thumb2</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="thumbnail-placeholder">
-                                    <div className="outer-light">
-                                        <div className="inner-dark">
-                                            <span>Thumb3</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="thumbnail-placeholder">
-                                    <div className="outer-light">
-                                        <div className="inner-dark">
-                                            <span>Thumb4</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="thumbnail-placeholder">
-                                    <div className="outer-light">
-                                        <div className="inner-dark">
-                                            <span>Thumb5</span>
-                                        </div>
-                                    </div>
-                                </div>
+                                ))}
                             </div>
 
                             <strong># Code Reference</strong>
@@ -113,4 +103,12 @@ class Worklogs extends Component {
     }
 }
 
-export default Worklogs;
+
+const mapDispatchToProps = {
+    handleOpenModalAsScreenhot,
+};
+
+export default connect(
+    null,
+    mapDispatchToProps,
+)(Worklogs);

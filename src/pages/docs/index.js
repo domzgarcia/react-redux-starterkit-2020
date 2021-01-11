@@ -5,7 +5,7 @@ import './views/styles/docs.styles.scss';
 
 // # Docs pages
 const DockerSetup = asyncRoute(() => import('./he/docker-setup'));
-const Worklogs = asyncRoute(() => import('./views/worklogs'));
+const Worklogs = asyncRoute(() => import('./he/worklogs'));
 
 
 const Dashboard = asyncRoute(() => import('./views/dashboard'));

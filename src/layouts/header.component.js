@@ -13,7 +13,7 @@ class Header extends Component {
                 <div className="signature">
                     <div className="-app-width">
                         <span className="rocket-emoji">📚</span>
-                        <strong>@DOMSGARCIA</strong>
+                        <strong>domzgarcia</strong>
                     </div>
                     
                 </div>

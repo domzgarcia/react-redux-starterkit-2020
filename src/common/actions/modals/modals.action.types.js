@@ -1,0 +1,1 @@
+export const OPEN_MODALS_AS_SCREENSHOTS = "common:openModalAsScreenshot";

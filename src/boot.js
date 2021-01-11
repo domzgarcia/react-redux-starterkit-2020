@@ -6,6 +6,8 @@ import store, {history} from './store';
 import App from 'Layouts/app.main';
 import './scss/index.scss';
 
+window.Store = store;
+
 const Boot = () => {
   return(
     <Provider store={store}>

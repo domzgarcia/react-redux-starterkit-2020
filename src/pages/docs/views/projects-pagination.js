@@ -4,7 +4,7 @@ import CodeViewer from 'Common/codeviewer';
 
 // const codeBlock = require('./codeblock/worklogs.codeblock');
 
-class MyApprovalPage extends Component {
+class ProjectsPagination extends Component {
     constructor(props){
         super(props);
     }
@@ -19,7 +19,7 @@ class MyApprovalPage extends Component {
                     
                     <div>
                         <div className="dg-header">
-                            <h1>He<span className="sub-headline">AWOL Report</span></h1>
+                            <h1>He<span className="sub-headline">Projects Tab Pagination</span></h1>
                         </div>
                         <div className="dg-box">
                             <strong># Short description</strong>
@@ -74,4 +74,4 @@ class MyApprovalPage extends Component {
     }
 }
 
-export default MyApprovalPage;
+export default ProjectsPagination;

@@ -1,0 +1,20 @@
+.headline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 30px;
+
+    .headline-icon-letter {
+        border-radius: 5px;
+        display: inline-block;
+        background-color: $violetshadeLight;
+        padding: 12px;
+        color: white;
+    }
+    .headline-description {
+        margin-left: 15px;
+        color: #89a;
+    }
+}

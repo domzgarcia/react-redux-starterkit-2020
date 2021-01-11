@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react';
-import DocsNav from './common-header';
+import DocsNav from '../common-sidenav';
 
 class Dashboard extends Component {
     constructor(props){

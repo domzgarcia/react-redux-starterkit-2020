@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import {Route, Switch} from 'react-router-dom';
 import asyncRoute from 'Utilities/asyncRoute';
+import ModalManager from 'Layouts/modalmanager';
 
 const HeaderComponent = asyncRoute(() => import('Layouts/header.component'));
 const FooterComponent = asyncRoute(() => import('Layouts/footer.component'));
@@ -23,6 +24,7 @@ class App extends Component {
         return (
             <div className={`App-${this.randomizer()}`}>
                 <HeaderComponent />
+                <ModalManager />
                 <Switch>
                     <Route exact path='/' component={Home}/>
                     <Route exact path='/about' component={About}/>

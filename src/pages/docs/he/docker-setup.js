@@ -1,10 +1,9 @@
 import React, {Component, Fragment} from 'react';
 import DocsNav from '../common-sidenav';
 import CodeViewer from 'Common/codeviewer';
+import DocHeadline from 'Common/components/documentation.headline.js';
 
-// const codeBlock = require('./codeblock/worklogs.codeblock');
-
-class MyApprovalPage extends Component {
+class DockerSetup extends Component {
     constructor(props){
         super(props);
     }
@@ -18,12 +17,11 @@ class MyApprovalPage extends Component {
                 <div className="dg-dynamic">
                     
                     <div>
-                        <div className="dg-header">
-                            <h1>He<span className="sub-headline">AWOL Report</span></h1>
-                        </div>
+                        <DocHeadline iconLetter="He" description="Docker Setup"/>
+
                         <div className="dg-box">
                             <strong># Short description</strong>
-                            <p> --- </p>
+                            <p>Thinking ahead of time, the team decided to create a docker configuration, MERN stack is tedious work during setup that demands lots of attention in both BE and FE. These will save time and effort and helps the future developers to make the application up and running smooth and easy. These include a docker network for BE and FE, database setup, commands, and data samples to get started.</p>
 
                             <strong># Screenshots</strong>
 
@@ -57,7 +55,9 @@ class MyApprovalPage extends Component {
                     <div className="dg-box">
                         <strong># Technologies</strong>
                         <ul className="steps">
-                            <li>Javascript</li>
+                            <li>Docker / Docker CLI</li>
+                            <li>Nodejs server</li>
+                            <li>MongoDB</li>
                         </ul>
                     </div>
 
@@ -74,4 +74,4 @@ class MyApprovalPage extends Component {
     }
 }
 
-export default MyApprovalPage;
+export default DockerSetup;
